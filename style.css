@@ -1,6 +1,6 @@
 *{
-    margin: 10px;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
 }
 .inner{
     display: flex;
@@ -38,6 +38,8 @@ h1{
     -webkit-background-clip: text;
     letter-spacing: 5px;
     font-size: 8vw;
+    margin: 0px 12px;
+    padding: 0px 12px;
 }
 .welcome button {
     height: 40px;
@@ -45,7 +47,6 @@ h1{
     margin: 10px;
     outline: none;
     font-size: 20px;
-    opacity: 1;
     border-radius: 5px;
 }
 
@@ -87,6 +88,7 @@ h2{
    color: rgb(209, 89, 89);
    letter-spacing: 3px;
    font-weight: bolder;
+   padding: 0px 12px;
 }
 .img-container{
     display: flex;
@@ -97,6 +99,7 @@ h2{
 .img-container img{
     height: 300px;
     width: 100%;
+    margin: 18px;
 }
 
 .name{
@@ -137,9 +140,9 @@ h2{
 
 
 .function-details h3{
-    padding: 2px;
     font-weight: lighter;
     letter-spacing: 2px;
+    padding: 0px 12px;
 }
 .invitation{
     display: flex;
@@ -151,6 +154,7 @@ p{
     text-align: center;
     color: red;
     font-weight: 900;
+    letter-spacing: 4px;
 
 }
 
