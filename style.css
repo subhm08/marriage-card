@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.main{
+    background-image: url('https://images.unsplash.com/photo-1621801306185-8c0ccf9c8eb8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwbWFycmlhZ2V8ZW58MHx8MHx8fDA%3D');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    opacity: 0.7; 
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 350px;
+}
+.welcome h1{
+    padding: 20px;
+    backdrop-filter: blur(6px);
+}
+
+h1{
+    color: transparent;
+    background: linear-gradient(red, blue, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    letter-spacing: 5px;
+    font-size: 8vw;
+}
+.welcome button {
+    height: 40px;
+    width: 200px;
+    margin: 10px;
+    outline: none;
+    font-size: 20px;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.bride{
+    color: red;
+    background-color: white;
+    border: 2px solid red;
+}
+
+.groom{
+    color: white;
+    background-color: red;
+    border: 2px solid white;
+}
+
+.border{
+    height: 65px;
+    background-image: url('background.jpeg');
+    
+}
+.intro{
+    height: 300px;
+}
+.intro h1{
+    padding: 12px;
+}
+.intro h3{
+    color: rgb(209, 89, 89);
+    padding: 20px;
+    letter-spacing: 3px;
+}
+.intro h4{
+    display: inline-block;
+    margin-right: 120px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+h2{
+   color: rgb(209, 89, 89);
+   letter-spacing: 3px;
+   font-weight: bolder;
+}
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 70%; */
+}
+.img-container img{
+    height: 300px;
+    width: 100%;
+}
+
+.name{
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 58px;
+    align-items: center;
+    justify-content: space-around;
+}
+.function{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 38px;
+}
+
+.function img{
+    height: 300px;
+    width: 460px;
+    border: 2px solid red;
+    border-radius: 12px;
+}
+
+.function-details{
+    height: 240px;
+    width: 200px;
+    border: 2px dotted red;
+    border-radius: 12px;
+    padding: 8px;
+    margin: 12px;
+}
+
+
+.function-details h3{
+    padding: 2px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+.invitation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    font-size: 33px;
+    text-align: center;
+    color: red;
+    font-weight: 900;
+
+}
+
+@media screen and (max-width: 750px){
+    .two{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .function-details{
+        width: 100%;
+    }
+}
