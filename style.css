@@ -38,7 +38,7 @@ h1{
     -webkit-background-clip: text;
     letter-spacing: 5px;
     font-size: 8vw;
-    margin: 0px 12px;
+    /* margin: 0px 12px; */
     padding: 0px 12px;
 }
 .welcome button {
@@ -138,8 +138,25 @@ h2{
     margin: 22px;
 }
 
+.function-details button{
+    color: white;
+    background-color: rgb(209, 89, 89);
+    height: 35px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
 
-.function-details h3{
+.function-details button:hover{
+    color: rgb(209, 89, 89);
+    background-color: white;
+    border: 1px solid rgb(209, 89, 89);
+}
+
+.function-details h3, 
+.details h3{
     font-weight: lighter;
     letter-spacing: 2px;
     padding: 0px 12px;
