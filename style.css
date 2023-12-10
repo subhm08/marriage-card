@@ -94,12 +94,12 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 70%; */
 }
-.img-container img{
-    height: 300px;
-    width: 100%;
-    margin: 18px;
+
+.video{
+    /* width: -webkit-fill-available; */
+    border-radius: 12px;
+    margin: 16px;
 }
 
 .name{
@@ -182,5 +182,8 @@ p{
     }
     .function-details{
         width: 100%;
+    }
+    .video{
+        width: -webkit-fill-available;
     }
 }
