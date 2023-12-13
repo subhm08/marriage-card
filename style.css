@@ -142,14 +142,15 @@ h2{
 
 .function img{
     height: 300px;
-    width: 460px;
+    width: 380px;
     border: 2px solid red;
     border-radius: 12px;
+    
 }
 
 .function-details{
     height: auto;
-    width: auto;
+    width: 400px;
     border: 2px dotted red;
     border-radius: 12px;
     padding: 18px;
