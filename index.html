@@ -6,57 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">    
 </head>
 
 <body>
+    
+    <dialog id="groom-box">
+        <button id="g-close">X</button>
+        <div class="about">
+            <div class="img">
+                <img src="groom.jpg" alt="">
+                </div>
+            <h1>Amarchand kumar</h1>
+            <h2><i>Son of:<br></of:br></i> Shiv shambhu prasad <br> & <br> Late gayatri devi</h2>
+            <h3><i> Maner charhajar muhalla</i></h3><br>
+            <h2><i>Family:</i></h2>
+            <h3>Shiv shankar prasad(uncle), Sarita devi(aunty)</h3>
+            <h3>Sanjay gupta(uncle), rekha devi(aunty)</h3>
+            <h3>Annu kumar(sister), Ranjan Gupta(brother-in-law)</h3>
+            <h3>Arvind kumar(bhaiya), Rajani devi(bhabhi)</h3>
+            <h3>avinash ranjan(bhaiya), Puja kumari(bhabhi)</h3>
+            <br>
+            <h3>Suresh kumar, Aditya raj, Ankur kumar, Priyanka kumar, Akhil kumar Gupta, Shubham kumar, saket kumar, sunny kumar, Aryan kumar</h3>
+            <br><h3>Anshu kumari, krish, arpita, anmol, Raunak</h3>
+        </div>
+    </dialog>
+
+    <dialog id="bride-box">
+        <button id="b-close">X</button>
+        <div class="about">
+            <div class="img">
+                <img src="weds-re.png" alt="">
+                </div>
+            <h1>Aarti kumari</h1>
+        </div>
+    </dialog>
+
     <div class="main inner">
+
         <div class="welcome">
             <h1>WELCOME</h1>
-            <button class="bride">Bride ></button>
-            <button class="groom">Groom ></button>
+            <button id="groom" class="groom">Groom ></button>
+            <button id="bride" class="bride">Bride ></button>
         </div>
     </div>
 
     <div class="border"></div>
     <div class="intro inner">
-        <h1>Groom X Bride</h1>
+    <h1>Amarchand <i>weds</i> Aarti</h1>
         <h3><i>We`re getting married</i></h3>
         <div class="date">
             <h4><i>Save the Date</i></h4>
             <h2><i>6th March 2024</i></h2>
         </div>
-        <!-- <button>Save</button> -->
     </div>
-    <div class="border"></div>
+    <div class="side-border"></div>
 
 
     <div class="img-container">
-        <video class="video" autoplay loop muted src="video.mp4" type="video/mp4"></video>
-       </div>
-
+        <video class="video" muted autoplay loop src="video.mp4" type="video/mp4"></video>
+    </div>
     <div class="details ">
-        <h1><i>Groom</i></h1>
-        <h2 style="text-align: center; color: red;"><i>weds</i></h2>
-        <h1 style="text-align: right;"><i>Bride</i></h1>
-        <!-- <div class="border"></div> -->
+        <h1><i>Amarchand Kumar</i></h1>
+        
+        <h2 style="text-align: center; color: red;"><img class="wed-img" src="weds-re.png" alt=""></h2>
+        <h1 style="text-align: right;"><i>Aarti kumari</i></h1>
+        <div class="border"></div>
         <div class="groom-name name">
             <div class="details">
-                <h2><i>Mr. Groom</i></h2>
-                <h3>Son of: </h3>
-                <h3>address</h3>
+                <h2><i>Mr. Amarchand Kumar</i></h2>
+                <h3><i>Son of:</i></h3>
+                <h3>Shiv Shambhu Prasad &</h3>
+                <h3>Late Gayatri Devi</h3>
             </div>
-            <img src="background.jpeg" alt="">
+            <img src="groom.jpg" alt="">
         </div>
         <div class="bride-name name">
             <img src="background.jpeg" alt="">
             <div class="details">
-                <h2><i>Ms. bride</i></h2>
-                <h3>Doughter of: </h3>
-                <h3>address</h3>
+                <h2><i>Ms. Aarti kumari</i></h2>
+                <h3><i>Doughter of:</i> </h3>
+                <h3>father`s name &</h3>
+                <h3>Mother`s name</h3>
             </div>
         </div>
-
+        <div class="side-border"></div>
     </div>
+   
 
     <div class="functions-list inner">
         <h1 style="color: red;">FUNCTIONS</h1>
@@ -94,7 +133,8 @@
                 <h2><i>Reception</i></h2>
                 <h3>March 6, 2024, Wednesday</h3>
                 <h3>6:00 PM</h3>
-                <h3><b>Venue:</b> Shristi Marriage Hall, Maner  <a href="https://maps.app.goo.gl/MjraFsJ1U8jinGS49" target="_blank"><button>view map</button></a></h3>
+                <h3><b>Venue:</b> Shristi Marriage Hall, Maner <a href="https://maps.app.goo.gl/MjraFsJ1U8jinGS49"
+                        target="_blank"><button>view map</button></a></h3>
                 <div class="border"></div>
             </div>
         </div>
@@ -112,6 +152,21 @@
         </p>
     </div>
     <div class="border"></div>
+
+    <script>
+        g_btn = document.getElementById("groom");
+        b_btn = document.getElementById("bride");
+        b_box = document.getElementById("bride-box");
+        g_box = document.getElementById("groom-box");
+        b_close_btn = document.getElementById("b-close");
+        g_close_btn = document.getElementById("g-close");
+        b_close_btn.addEventListener("click", () => b_box.close());
+        g_close_btn.addEventListener("click", () => g_box.close());
+        g_btn.addEventListener("click", () => g_box.showModal());
+        b_btn.addEventListener("click", () => b_box.showModal());
+
+    </script>
+
 </body>
 
 </html>

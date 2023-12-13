@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 .inner{
     display: flex;
     flex-direction: column;
@@ -28,17 +29,20 @@
 }
 .welcome h1{
     padding: 20px;
-    backdrop-filter: blur(6px);
+    font-family: 'Petit Formal Script', cursive;
+    letter-spacing: 13px;
+    font-weight: 900;
+    backdrop-filter: blur(23px);
+    text-align: center;
 }
 
 h1{
     color: transparent;
-    background: linear-gradient(red, blue, green);
+    background: linear-gradient(blue, red, green);
     background-clip: text;
     -webkit-background-clip: text;
     letter-spacing: 5px;
-    font-size: 8vw;
-    /* margin: 0px 12px; */
+    font-size: 6vw;
     padding: 0px 12px;
 }
 .welcome button {
@@ -54,18 +58,32 @@ h1{
     color: red;
     background-color: white;
     border: 2px solid red;
+    transition: all ease 1s;
+}
+.bride:hover{
+    scale: 1.1;
+    border: 2px solid white;
 }
 
 .groom{
     color: white;
     background-color: red;
     border: 2px solid white;
+    transition: all ease 1s;
+}
+.groom:hover{
+    scale: 1.1;
+    border: 2px solid red;
 }
 
 .border{
     height: 65px;
     background-image: url('background.jpeg');
-    
+}
+.side-border{
+    height: 65px;
+    background-image: url('background.jpeg');
+    rotate:  180deg;
 }
 .intro{
     height: 300px;
@@ -130,8 +148,8 @@ h2{
 }
 
 .function-details{
-    height: 240px;
-    width: 200px;
+    height: auto;
+    width: auto;
     border: 2px dotted red;
     border-radius: 12px;
     padding: 18px;
@@ -147,9 +165,11 @@ h2{
     outline: none;
     border-radius: 5px;
     font-size: 17px;
+    transition: all ease 1s;
 }
 
 .function-details button:hover{
+    scale: 1.1;
     color: rgb(209, 89, 89);
     background-color: white;
     border: 1px solid rgb(209, 89, 89);
@@ -166,12 +186,91 @@ h2{
     align-items: center;
     justify-content: center;
 }
-p{
+.invitation p{
     font-size: 33px;
     text-align: center;
     color: red;
     font-weight: 900;
     letter-spacing: 4px;
+
+}
+
+dialog{
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 12px;
+    position: absolute;
+    top: 10%;
+    background-color: transparent;
+    backdrop-filter: blur(42px);
+    color: rgb(209, 89, 89);
+    
+}
+
+dialog button{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 4px;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 32px;
+    color: red;
+    transition: all ease 2s;
+}
+dialog button:hover{
+    scale: 1.1;
+    color: white;
+}
+
+dialog .about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+dialog h2{
+    text-align: center;
+}
+dialog  h3{
+    text-align: center;
+    color: red;
+    font-style: italic;
+}
+.img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50% ;
+    padding: 5px;
+    background:linear-gradient(yellow, orange, pink, purple, green);
+    box-shadow: 2px 5px 100px 4px ;
+    overflow: hidden;
+}
+img:hover{
+    scale: 1.1;
+}
+
+img{
+   height: 180px;
+   width: 180px;
+   border-radius: 50%;
+   transition: all ease 1s; 
+  }
+.wed-img{
+    height: 100px;
+    width: 100px;
+    /* box-shadow: 2px 2px 1000px 2px rgb(209, 89, 89); */
+}
+
+.name img{
+    box-shadow: 2px 2px 1000px 1px rgb(209, 89, 89);
 
 }
 
